@@ -9,8 +9,7 @@ export interface Position {
 
 export interface Experience {
     orgName: string,
-    orgLogoPath: string,
-    orgLink: string,
+  
     positions: Position[]
 }
 

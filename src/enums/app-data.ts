@@ -31,12 +31,7 @@ const SocialMediaLinks: ExternalSite[] = [
         simpleIconName: "gmail",
         backgroundColor: "#EA4335",
     },
-   /* {
-        name: "Instagram",
-        link: "",
-        simpleIconName: "instagram",
-        backgroundColor: "#FF0069",
-    }*/
+ 
 ]
 
 // Fullstack skills
@@ -141,73 +136,33 @@ const androidSection: SkillSection = {
     ]
 }
 
-// android skills
-const DigitalSolutionSkills: ExternalSite[] = [
-
-];
-
-// android section
-const DigitalSolutionSection: SkillSection = {
-    sectionTitle: "Digital Solutions & Consultancy",
-    imagePath: AssetPaths.DIGITAL_SOLUTIONS_SVG,
-    skillLinks: DigitalSolutionSkills,
-    skillsList: [
-        "Streamlining business operations with tools like Jira, offering automated workflows, and data-driven insights.",
-        "Centralizing business data within secure, interconnected platforms to facilitate informed decision-making",
-        "Helping local businesses enable real-time communication and task coordination through MS Teams and Outlook",
-    ]
-}
-
 // network  skills
 const networkSkills: ExternalSite[] = [
     {
-        name: "GCP",
-        link: "https://cloud.google.com/",
-        simpleIconName: "googlecloud",
-        backgroundColor: "#4285F4",
+        name: "cisco",
+        link: "https://www.cisco.com/",
+        simpleIconName: "cisco",
+        backgroundColor: "#1BA0D7",
     },
     {
-        name: "AWS",
-        link: "https://aws.amazon.com/",
-        simpleIconName: "amazonwebservices",
-        backgroundColor: "#232F3E",
+        name: "huawei",
+        link: "https://e.huawei.com/en/talent/portal/#/",
+        simpleIconName: "huawei",
+        backgroundColor: "#FF0000",
     },
     {
-        name: "Firebase",
-        link: "https://firebase.google.com/",
-        simpleIconName: "firebase",
-        backgroundColor: "#FFCA28",
+        name: "pfsense",
+        link: "https://www.pfsense.org/",
+        simpleIconName: "pfsense",
+        backgroundColor: "#212121",
     },
     {
-        name: "PostgreSQL",
+        name: "VPN",
         link: "https://www.postgresql.org/",
-        simpleIconName: "postgresql",
-        backgroundColor: "#336791",
+        simpleIconName: "openvpn",
+        backgroundColor: "#EA7E20",
     },
-    {
-        name: "MongoDB",
-        link: "https://www.mongodb.com/",
-        simpleIconName: "mongodb",
-        backgroundColor: "#47A248",
-    },
-    {
-        name: "Docker",
-        link: "https://www.docker.com/",
-        simpleIconName: "docker",
-        backgroundColor: "#1488C6",
-    },
-    {
-        name: "Render",
-        link: "https://render.com/",
-        simpleIconName: "render",
-        backgroundColor: "#000000",
-    },
-    {
-        name: "Heroku",
-        link: "https://www.heroku.com/",
-        simpleIconName: "heroku",
-        backgroundColor: "#430098",
-    },
+   
 ];
 
 // network section
@@ -231,349 +186,199 @@ const networkSection: SkillSection = {
 
 
 
-// Personal projects
-const PersonalProjects: ProjectSection = {
-    sectionTitle: "My Projects",
+// Dev projects
+const DevelopmentProjects: ProjectSection = {
+    sectionTitle: "Development Projects",
     sectionSubtitle: "🚀 Showcasing innovative solutions and real-world applications built with cutting-edge technologies.",
     entities: [
         {
-            title: "Web-Based 3D IFC File Viewer",
-            coverImagePath: AssetPaths.PROJECT_THREEJS_IFC_VIEWER,
-            liveLink: "https://dhruvilrathod.github.io/webifcviewer/",
-            githubLink: "https://github.com/dhruvilrathod/three_ifc_angular",
-            description: "🧱 This tool enables seamless visualization of IFC files in your browser. Toggle elements, explore real-time details by hovering, search and highlight elements, and interact with ease for a dynamic 3D experience.",
-            techStack: ["Angular", "ThreeJS", "ExpressJS", "Heroku"],
+            title: "Study Management Application",
+            coverImagePath: AssetPaths.PROJECT_STUDY_MANAGEMENT,
+            description: "A web-based study management platform built with Angular and Spring Boot, featuring secure authentication, role-based access, and real-time filtering.",
+            techStack: ["Angular", "SpringBoot", "MySQL"],
+            year: 2024
+        },
+        {
+            title: "Fire Management Android App",
+            coverImagePath: AssetPaths.PROJECT_FIRE_FIGHT,
+            description: "An Android app for fire incident reporting and management with real-time alerts",
+            techStack: ["Android Studio", "FireBase"],
+            year: 2024
+        },  {
+            title: "Captive Portal Management System",
+            coverImagePath: AssetPaths.PROJECT_PORTAL,
+            description: " Developed a web-based platform for managing network access through a captive portal, integrating user authentication, access control, and session monitoring.",
+            techStack: ["PHP", "Html","JS","MySQL"],
+            year: 2024
+        },
+     
+        {
+            title: "Emotion, Gender and Age Detection System –",
+            coverImagePath: AssetPaths.PROJECT_AI,
+            description: "A CNN-based system for real-time emotion, gender, and age detection.",
+            techStack: ["Python", "OpenCV", "TensorFlow", "CNN","Deep Learning"],
+            year: 2024
+        },
+        {
+            title: "Intranet Web Application",
+            coverImagePath: AssetPaths.PROJECT_INTRANET,
+            description: "A secure intranet web application designed for internal communication and resource management within an organization.",
+            techStack: ["Angular", "SpringBoot", "MySQL",],
+            year: 2023
+        },
+        {
+            title: "Donation Management Android Application",
+            coverImagePath: AssetPaths.PROJECT_DONATION,
+            description: "A mobile app for managing and tracking donations, connecting donors with recipients efficiently",
+            techStack: ["Android Studio", "FireBase"],
+            year: 2023
+        },
+        {
+            title: "E-commerce Website",
+            coverImagePath: AssetPaths.PROJECT_ECOMMERCE,
+            description: "An e-commerce platform for browsing and managing products with a user-friendly interface.",
+            techStack: ["PHP", "Html","JS","MySQL"],
             year: 2022
         },
         {
-            title: "Customizable Multi-Select Dropdown",
-            coverImagePath: AssetPaths.PROJECT_CUSTOM_DROPDOWN,
-            githubLink: "https://github.com/dhruvilrathod/custom-dropdown/tree/resource-tree-utility",
-            description: "🌲 An Angular-based, asynchronous multi-select dropdown designed for tree-structured data with custom validation. It's a powerful replacement for jQuery's Select2.",
-            techStack: ["Angular", "TypeScript", "SCSS"],
-            year: 2023,
-            branch: "resource-tree-utility"
+            title: "FightCovid Web Application",
+            coverImagePath: AssetPaths.PROJECT_COVID_WEB,
+            description: "A pandemic management platform for data tracking and monitoring.",
+            techStack: ["PHP", "Html","JS","MySQL"],
+            year: 2021
         },
         {
-            title: "Learning Management System",
-            coverImagePath: AssetPaths.PROJECT_LMS_APP,
-            githubLink: "https://github.com/dhruvilrathod/lms-asite",
-            description: "📚 A production-grade frontend for a Learning Management System, designed with scalability in mind to deliver a seamless and efficient user experience.",
-            techStack: ["Angular", "PrimeNG", "Tailwind", "Figma"],
-            year: 2023
+            title: "FightCovid Mobile App",
+            coverImagePath: AssetPaths.PROJECT_COVID_ANDROID,
+            description: "A real-time GPS tracking and data management mobile application.",
+            techStack: ["Android Studio", "FireBase"],
+            year: 2021
         },
-        {
-            title: "Angular + NestJS Boilerplate",
-            coverImagePath: AssetPaths.PROJECT_ANGULAR_NEST_DOCKER,
-            githubLink: "https://github.com/dhruvilrathod/sample-angular-nest",
-            description: "🛠️ A production-grade boilerplate integrating Angular, NestJS, and Nginx for seamless fullstack development. Perfect for kickstarting robust and scalable web applications.",
-            techStack: ["Angular", "NestJS", "NgINX", "Docker"],
-            year: 2023
-        },
-        {
-            title: "Hospital Management System Dashboard",
-            coverImagePath: AssetPaths.PROJECT_HMS_APP,
-            githubLink: "https://github.com/freelancer-dhruvil/hms-demo",
-            description: "🏥 Transformed Figma designs into a fully functional, user-friendly dashboard for a Hospital Management System, ensuring precision and intuitive interface.",
-            techStack: ["Angular", "PrimeNG", "PrimeFlex", "Figma"],
-            year: 2024
-        },
-        {
-            title: "Cross-Platform Music Player",
-            coverImagePath: AssetPaths.PROJECT_MUSIC_PLAYER,
-            githubLink: "https://github.com/dhruvilrathod/music_player",
-            description: "🎵 Developed with Angular and NestJS, this music player evolved into a fullstack app and was wrapped with ElectronJS for a seamless desktop experience.",
-            techStack: ["Angular", "NestJS", "ElectronJS", "ExpressJS"],
-            year: 2023
-        }
+
+
+
+      
     ]
 }
 
-// Freelancing projects
-const FreelancingProjects: ProjectSection = {
-    sectionTitle: "Freelancing",
-    sectionSubtitle: "🚀 Transforming Ideas into Digital Solutions: Tailored Websites, Custom CMS, and More!",
+// Networking projects
+const NetworkingProjects: ProjectSection = {
+    sectionTitle: "Networking & Security Projects ",
+    sectionSubtitle: "🚀 Design and implementation of secure and efficient IT infrastructures",
     entities: [
         {
-            title: "South Australia Tiling",
-            coverImagePath: AssetPaths.PROJECT_SA_TILING,
-            liveLink: "https://southaustraliatiling.com.au/",
-            description: "🚀 Built with SSR and SSG to showcase a South Australian tiling and bathroom renovation business, enhancing their online presence and visibility.",
-            techStack: ["Angular 19", "SSR/SSG", "NestJS", "Firebase"],
-            year: 2025
-        },
-        {
-            title: "Kiwi Finance",
-            coverImagePath: AssetPaths.PROJECT_KIWI_FINANCE,
-            liveLink: "https://kiwifinance.com.au/",
-            description: "💰 Developed a tailored website for a new Perth-based finance and mortgage broking business, combining modern design with a focus on accessibility and client engagement.",
-            techStack: ["Angular", "MongoDB", "NestJS", "Firebase"],
-            year: 2025
-        },
-        {
-            title: "RAS Finance Website + CMS",
-            coverImagePath: AssetPaths.PROJECT_RAS_FINANCE,
-            liveLink: "https://rasfinance.com.au/",
-            description: "📈 Designed a bespoke website for a leading South Australia-based finance and mortgage broking business, showcasing services with a sleek, client-focused design.",
-            techStack: ["Angular", "MongoDB", "NestJS", "Firebase"],
+            title: "IT Infrastructure Deployment for a Growing Business",
+            coverImagePath: AssetPaths.PROJECT_INFRASTRUCTURE,
+            description: " Designed and implemented a scalable IT infrastructure, including ADDS, DNS, VLANs, VPNs, and a pfSense firewall.",
+            techStack: ["PfSense", "VPN", "VLAN", "DNS","ADDS"],
             year: 2024
         },
+     
+        
         {
-            title: "Acquire Conveyancing Website",
-            coverImagePath: AssetPaths.PROJECT_ACQUIRE_CONVEYANCING,
-            liveLink: "https://acquireconveyancing.com.au/",
-            description: "🏡 Crafted a tailored website for a South Australia-based conveyancing business, delivering a professional online presence with user-friendly design and local appeal.",
-            techStack: ["Angular", "Tailwind", "Firebase"],
+            title: "MPLS Network Deployment",
+            coverImagePath: AssetPaths.PROJECT_MPLS,
+            description: "Configured MPLS with BGP, OSPF, and VPNs for secure multi-site connectivity.",
+            techStack: ["enSP Huawei", "VLAN", "BGP","MPLS","VPN"],
             year: 2023
         },
     ]
 }
 
-
-// Job experience
-const JobExperience: ExperienceSection = {
-    experienceSectionTitle: "Work Experience",
-    experiences: [
-        {
-            orgLink: "https://acquireconveyancing.com.au/",
-            orgLogoPath: AssetPaths.WORK_ACQUIRE_LOGO,
-            orgName: "Acquire Conveyancing",
-            positions: [
-                {
-                    positionName: "Conveyancing Assistant",
-                    duration: "Apr 2024 - Present",
-                    location: "Adelaide, SA",
-                    locationType: "On-Site",
-                    jobType: "Part-time",
-                    workPoints: [
-                        "Ensured secure management of sensitive data with top-notch IT support. 🔒",
-                        "Streamlined property searches by liaising with government agencies. 🏡",
-                        "Prepared legal documents like Cooling Off Forms, Nominations, and Addendums. 📝",
-                        "Optimized software workflows with precise data entry and customized templates in CATS and PEXA. ⚙️",
-                    ]
-                }
-            ]
-        },
-        {
-            orgLink: "https://www.asite.com/",
-            orgLogoPath: AssetPaths.WORK_ASITE_LOGO,
-            orgName: "Asite Solution",
-            positions: [
-                {
-                    positionName: "Jr Software Engineer",
-                    duration: "Jun 2023 - Mar 2024",
-                    location: "Ahmedabad, India",
-                    locationType: "Hybrid",
-                    jobType: "Full-time",
-                    workPoints: [
-                        "Built the Issue Tracker feature for the cBIM unit, integrating 30+ Angular components like side pane, image carousel, and quill editor. 🚀📋",
-                        "Designed a robust Angular reactive form and a customizable async dropdown for efficient file-folder tree searches, enhancing Record Retention Policy. 📂🔍",
-                        "Debugged and unit-tested code using Karma & Jasmine, achieving an impressive 96% coverage. 🐞✅",
-                    ]
-                }
-            ]
-        }
-    ]
-}
-
-// Freenacing Experience
-const FreelancingExperience: ExperienceSection = {
-    experienceSectionTitle: "Freelancing",
-    experiences: [
-        {
-            orgLink: "https://southaustraliatiling.com.au/",
-            orgLogoPath: AssetPaths.WORK_SA_TILING_LOGO,
-            orgName: "South Australia Tiling",
-            positions: [
-                {
-                    positionName: "Professional Freelancer",
-                    duration: "2025",
-                    location: "Adelaide, WA",
-                    locationType: "Remote",
-                    jobType: "Contract",
-                    workPoints: [
-                        "Designed and developed a visually appealing website to highlight the high-quality work of a South Australian tiling and bathroom renovation business, improving their online presence.📊",
-                        "Utilized Server-Side Rendering (SSR) and Static Site Generation (SSG) to enhance search engine visibility and drive organic traffic to the website. 🚀",
-                    ]
-                }
-            ]
-        },
-        {
-            orgLink: "https://kiwifinance.com.au/",
-            orgLogoPath: AssetPaths.WORK_KIWI_LOGO,
-            orgName: "Kiwi Finance",
-            positions: [
-                {
-                    positionName: "Professional Freelancer",
-                    duration: "2025",
-                    location: "Perth, WA",
-                    locationType: "Remote",
-                    jobType: "Contract",
-                    workPoints: [
-                        "Designed and developed an SEO-friendly website with financial calculators, and a custom contact form tailored to Astute Financial's requirements. 🌐📊",
-                        "Streamlined data collection and client inquiries by integrating the contact form with Google Sheets and Gmail. 📋",
-                    ]
-                }
-            ]
-        },
-        {
-            orgLink: "https://rasfinance.com.au/",
-            orgLogoPath: AssetPaths.WORK_RAS_LOGO,
-            orgName: "RAS Finance",
-            positions: [
-                {
-                    positionName: "Professional Freelancer",
-                    duration: "2024",
-                    location: "Adelaide, SA",
-                    locationType: "Hybrid",
-                    jobType: "Contract",
-                    workPoints: [
-                        "Built a dynamic website featuring financial calculators, a CMS for articles, and a sleek contact form. 📊📝",
-                        "Streamlined client inquiries by integrating the contact form with Google Sheets and Gmail. 📧📋✨",
-                    ]
-                }
-            ]
-        },
-        {
-            orgLink: "https://acquireconveyancing.com.au/",
-            orgLogoPath: AssetPaths.WORK_ACQUIRE_LOGO,
-            orgName: "Acquire Conveyancing",
-            positions: [
-                {
-                    positionName: "Professional Freelancer",
-                    duration: "2023",
-                    location: "Adelaide, SA",
-                    locationType: "Remote",
-                    jobType: "Contract",
-                    workPoints: [
-                        "Crafted a professional logo, business cards, and responsive website using Illustrator. 🎨💼",
-                        "Set up a custom domain email and Office 365 with SharePoint for seamless operations. 📧🔗",
-                        "Developed and hosted an SEO-friendly website with a contact form to boost online presence. 🌐📈",
-                    ]
-                }
-            ]
-        },
-    ]
-}
 
 // Internships Experience
 const InternshipExperience: ExperienceSection = {
     experienceSectionTitle: "Internships",
     experiences: [
         {
-            orgLink: "https://asite.com/",
-            orgLogoPath: AssetPaths.WORK_ASITE_LOGO,
-            orgName: "Asite Solution",
+            orgName: "Co-Energy",
             positions: [
                 {
-                    positionName: "UI Developer Intern",
-                    duration: "Feb 2023 - May 2023",
-                    location: "Ahmedabad, India",
-                    locationType: "Hybrid",
-                    jobType: "Full-time",
+                    positionName: "Infrastructure Engineer (Final Year Internship)",
+                    duration: "02/2024 - 06/2024",
+                    location: "Ariana, Tunisia",
                     workPoints: [
-                        "Led an 11-member team to design and implement the frontend architecture of an LMS using Angular, following the latest methodologies and best practices. 🚀💻",
-                        "Gained expertise in Angular, jQuery, SCSS, and DSA through personalized training and hands-on assignments during the internship. 🌟📊✨",
+                        "Implemented VLANs for network segmentation, VPNs for secure remote access, and deployed pfSense firewall with Snort IDS/IPS for intrusion detection and prevention. Integrated Zabbix monitoring to ensure system performance and reliability.",
+                        "Configured Active Directory Domain Services (ADDS), DNS, and established a secondary domain to enhance network organization and access control.",
+                        "Developed a client portal with MySQL for data management and an admin portal with LDAP authentication to streamline user access and security."
                     ]
                 },
-                {
-                    positionName: "Software Engineering Intern",
-                    duration: "Jun 2022 — Jul 2022",
-                    location: "Ahmedabad, India",
-                    locationType: "On-Site",
-                    jobType: "Full-time",
-                    workPoints: [
-                        "Developed an innovative 3D IFC file viewer using Three.js, applying DSA concepts to create a tree-like structure for exploring model internals. 🌐🌳📐",
-                        "Deployed the Node.js backend on Heroku and hosted the frontend on GitHub Pages for seamless accessibility. 🚀💻✨",
-                    ]
-                }
+                
             ]
         },
         {
-            orgLink: "https://workxmate.com/",
-            orgLogoPath: AssetPaths.WORK_WORKXMATE_LOGO,
-            orgName: "WorkXMate Technologies Pvt. Ltd.",
+         
+            orgName: "Protech-IT",
             positions: [
                 {
-                    positionName: "Angular Developer Internship",
-                    duration: "Feb 2022 — Mar 2022",
-                    location: "Noida, India",
-                    locationType: "Remote",
-                    jobType: "Part-time",
+                    positionName: "Full Stack Developer (Internship)",
+                    duration: "06/2023 - 08/2023",
+                    location: "Gabes , Tunisia",
                     workPoints: [
-                        "Designed and implemented an optimized, cross-browser-compatible Attendance Management Module. 🌐✔️",
-                        "Built a RESTful Node.js server integrated with Oracle DB for seamless code migration. 🚀📊",
-                        "Developed intuitive web forms with robust validation and error handling for a smooth user experience. 🖋️⚙️✨",
+                          "Developed an intranet web application using Angular for the front end, Spring Boot for the back end, and MySQL for data storage.",
+                          "Integrated REST APIs to ensure smooth and efficient communication between system components.",
+                          "Designed and modeled the system using UML.",
+                    ]
+                }
+            ]
+        },
+        {
+         
+            orgName: "Co-Energy",
+            positions: [
+                {
+                    positionName: "Full Stack Web & Mobile Developer (Final Year Internship)",
+                    duration: "03/2021 - 07/2021",
+                    location: "Ariana, Tunisia",
+                    workPoints: [
+                          "Developed the FightCovid web application for pandemic management using HTML, PHP, and MySQL.",
+                          "Created a mobile version with Android Studio, integrating real-time GPS tracking and Firebase for data management.",
+                          "Enhanced public health monitoring by providing real-time location-based insights.",
                     ]
                 }
             ]
         },
     ]
 }
-
-// Community Involvement
-const CommunityInvolvement: ProjectSection = {
-    sectionTitle: "Community Involvement",
-    entities: [
-        {
-            liveLink: "https://adventofcode.com/",
-            coverImagePath: AssetPaths.ACHIEVEMENT_AOC_PIC,
-            techStack: ["Python"],
-            title: "Advent of Code 2024",
-            description: "📅 Completed all Advent of Code 2024 problems within a personal deadline of 1 day each, showcasing strong DSA and problem-solving skills.🎯",
-            year: 2024,
-            githubLink: "https://github.com/dhruvilrathod/RSP/tree/master/advent_of_code",
-        },
-    ]
-}
-
-// Achievement
-const AchievementInvolvement: ProjectSection = {
-    sectionTitle: "Achievements",
-    entities: [
-        {
-            liveLink: "https://www.linkedin.com/posts/dhruvilrathod_competitiveprogramming-codingchallenges-teamwork-activity-7291965632684695553-CTqM?utm_source=share&utm_medium=member_desktop&rcm=ACoAADi05s0B8nMLyX_mC2aovn2P6w6tNr-b3AA",
-            coverImagePath: AssetPaths.ACHIEVEMENT_CPC_RSP_WIN_PIC,
-            techStack: ["C++", "Python"],
-            title: "CPC X RSP 2025",
-            description: "🏆 Secured 3rd place in a high-stakes coding competition, tackling complex algorithms under pressure! Grateful for an incredible team and experience at CPC X RSP competition.",
-            year: 2025,
-        },
-    ]
-}
-
 // Degrees
 const BachelorsDegree: EducationSection = {
-    degreeName: "Bachelor of Engineering",
-    majorName: "Computer Engineering",
-    duration: "Jul 2019 - May 2023",
-    universityName: "Gujarat Technological University (GTU)",
-    campusName: "VGEC",
-    logoImagePath: AssetPaths.EDUCATION_GTU_LOGO,
-    gpa: "6.9 / 7.0",
-    websiteLink: "https://www.gtu.ac.in/",
-    studyPoints: [
-        "Studied foundational subjects like Data Structures, Database Management Systems, Discrete Mathematics, and Operating Systems, building a strong base in computer science. 🧠💻",
-        "Explored Object-Oriented Programming, Software Engineering, Computer Networks, and Microprocessor & Interfacing, bridging software development with hardware understanding. ⚙️",
-        "Gained insights into Big Data Analytics, Artificial Intelligence, Data Mining, and Data Visualization, equipping skills for modern computing challenges. 🚀📊",
-    ]
+    degreeName: "Bachelor of Applied Science in Information and Telecommunication Technology",
+    majorName: "Network Security",
+    duration: "J09/2018 - 06/2021",
+    universityName: "Higher Institute of Technological Studies of Gabes",
+   
 }
 
 const MastersDegree: EducationSection = {
-    degreeName: "Master of Information Technology",
-    majorName: "Cyber Security",
-    duration: "Feb 2024 - Dec 2025",
-    universityName: "University of South Australia (UniSA)",
-    campusName: "Mawson Lakes",
-    logoImagePath: AssetPaths.EDUCATION_UNISA_LOGO,
-    gpa: "6.7 / 7.0",
-    websiteLink: "https://i.unisa.edu.au/students/",
-    studyPoints: [
-        "Built expertise in Security Principles, Network Infrastructure, and Risk Management, laying a solid foundation in cybersecurity fundamentals. 🔐",
-        "Gained deep knowledge in Security Architecture, Network Security, and Critical Infrastructure Protection, alongside insights into Cyber Criminal Behavior and Australian Cyber Law. ⚙️🛡️",
-        "Developed strategic skills through Consultancy, Enterprise Security, and hands-on labs experience with tech-giants including Cisco and FortiGate. 🚀",
+    degreeName: "Master in Communications and Networking Engineering Degree",
+    duration: "09/2021 - 07/2024",
+    universityName: "National Engineering School of Gabes ",
+}
+
+
+// Certifications
+const Certifications: ProjectSection = {
+    sectionTitle: "",
+    entities: [
+        {
+            coverImagePath: AssetPaths.ACHIEVEMENT_CCNA,
+            techStack: ["CCNA1"],
+            title: "CCNA1",
+            description: "Introduction to Networks",
+            liveLink: "https://www.credly.com/badges/19b51f70-d8d1-4300-b2c8-1d98a8eba8e7",
+        },
+        {
+            coverImagePath: AssetPaths.ACHIEVEMENT_CCNA,
+            techStack: ["CCNA2"],
+            title: "CCNA2",
+            description: "Switching, Routing, and Wireless Essentials",
+            
+        },
     ]
 }
+
+
+
 
 
 
@@ -591,34 +396,31 @@ export const AppConfig = {
     professionalSummary: "Software and Network Engineer with expertise in web development and network infrastructure, specializing in secure and efficient solutions. Passionate about problem-solving and optimization.",
     githubProfile: "https://github.com/Thouir-sondos",             
     portfolioRepository: "https://github.com/Thouir-sondos/Portfolio-Angular",      
-    socialMedia: SocialMediaLinks,      // use from above
-    aboutMe: [                          // all the sections you want to show under "What I do?". 
+    socialMedia: SocialMediaLinks,    
+    aboutMe: [                         
         FullstackSection,
         androidSection,
         networkSection,
-       // DesignSection,
-       // DigitalSolutionSection,
+     
     ],
 
     // Projects page
-    projectsPageTitle: "Projects & Freelancing",    // Title of projects page
-    projectsPageDescription: "My projects leverage a diverse range of cutting-edge technology tools. I specialize in building data science solutions and seamlessly deploying them as web applications using robust cloud infrastructure.",
-    projectSections: [                  // Define and add a custom section if needed
-        FreelancingProjects,
-        PersonalProjects,
+    projectsPageTitle: "Projects",    
+    projectsPageDescription: "My projects leverage a diverse range of cutting-edge technology tools.",
+    projectSections: [   
+        DevelopmentProjects,
+       NetworkingProjects,
     ],
 
     // Experience page
-    experiencePageTitle: "My Works, Internships and Freelancing",
-    experiencePageDescription: "💼 From Corporate Giants to Creative Freelance Projects: A journey through internships, corporate, and helping local businesses.",
-    experienceSections: [               // Define and add a custom section if needed
-        JobExperience,
+    experiencePageTitle: "My experiences",
+    experiencePageDescription: "",
+    experienceSections: [               
         InternshipExperience,
-        FreelancingExperience,
     ],
 
     // Education page
-    educationPageTitle: "Degrees and Qualifications",
+    educationPageTitle: "Degrees",
     educationPageDescription: "🎓 A Journey of Continuous Learning: Building Skills, Solving Problems, and Shaping the Future 🌟",
     educationSections: [
         MastersDegree,
@@ -627,10 +429,9 @@ export const AppConfig = {
 
 
     // Achievements Page
-    achievementsPageTitle: "Achievements, Participation and Community Involvement",
-    achievementsPageDescription: "🚀 Milestones, Contributions & Impact: Driving Innovation, Engaging Communities, and Making a Difference 🌍",
+    achievementsPageTitle: "Certifications",
+    achievementsPageDescription: "",
     achievementsSections: [
-        AchievementInvolvement,
-        CommunityInvolvement,
+        Certifications,
     ],
 }

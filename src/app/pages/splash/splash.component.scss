@@ -26,7 +26,7 @@ body {
 }
 
 .screen {
-    background-color: $theme-blue;
+    background-color: #ffffff;
     overflow: hidden;
     border-radius: 100%;
     animation: grow 3s forwards;
@@ -58,9 +58,3 @@ body {
     }
 }
 
-#logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}

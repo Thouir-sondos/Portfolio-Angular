@@ -9,7 +9,7 @@ export enum AppRoutes {
     ACHIEVEMENTS = "achievements",
 
     // Your google form link
-    CONTACT = "https://docs.google.com/forms/d/e/1FAIpQLSfMOsQhl_Lci5s_qrYN-LEWlJ3NoBag-Uyf17IGktExA5KDpw/viewform?usp=header",
+    CONTACT = "https://docs.google.com/forms/d/e/1FAIpQLSe_XgmEFkeqdqAAGFVXZAPAaYA0Pqwp5G089hXJ45z5USyjgg/viewform?usp=dialog",
 }
 
 export const RoutesData: RouteData[] = [
